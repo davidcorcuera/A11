@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <EditText
@@ -14,70 +13,89 @@
         android:layout_margin="8dp"
         android:ems="10"
         android:hint="Enter your name"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="TOPPING" />
+        android:text="TOPPING"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/editText"/>
 
     <CheckBox
         android:id="@+id/checkBox"
-        android:layout_width="match_parent"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="Whipped Cream" />
+        android:text="Whipped Cream"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/textView3"/>
 
     <CheckBox
         android:id="@+id/checkBox2"
-        android:layout_width="match_parent"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="Chocolate" />
+        android:text="Chocolate"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/checkBox"/>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="QUANTITY" />
+        android:text="QUANTITY"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@id/button2"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="8dp">
+
 
         <Button
             android:id="@+id/button2"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
-            android:text="-" />
+            android:text="-"
+            android:layout_toLeftOf="@id/textView5"
+            android:layout_alignBottom="@id/textView5"
+            android:paddingTop="4dp"
+            />
 
         <TextView
+            android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="16dp"
-            android:text="2" />
+            android:text="2"
+            android:layout_centerInParent="true"
+            android:paddingBottom="8dp"/>
 
         <Button
             android:id="@+id/button3"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
-            android:text="+" />
-    </LinearLayout>
+            android:text="+"
+            android:layout_toRightOf="@id/textView5"
+            android:layout_alignBottom="@id/textView5"
+            android:paddingTop="4dp"/>
+
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="ORDER SUMMARY"
-        android:layout_margin="8dp"/>
+        android:layout_margin="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@id/button"/>
 
     <TextView
         android:id="@+id/textView4"
@@ -91,6 +109,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ORDER"
-        android:layout_margin="8dp"/>
+        android:layout_margin="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
 
-</LinearLayout>
+</RelativeLayout>
