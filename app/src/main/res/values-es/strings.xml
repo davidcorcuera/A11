@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_your_name">Introduce tu nombre</string>
+    <string name="topping">TOPPING</string>
+    <string name="whipped_cream">Nata Montada</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="quantity">CANTIDAD</string>
+    <string name="order_summary">RESUMEN PEDIDO</string>
+    <string name="order">PEDIR</string>
+</resources>
