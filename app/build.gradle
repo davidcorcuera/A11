@@ -5,7 +5,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "jesuitas.dam.a11"
+        applicationId "jesuitas.dam.Pedidos"
         minSdkVersion 22
         targetSdkVersion 30
         versionCode 1
