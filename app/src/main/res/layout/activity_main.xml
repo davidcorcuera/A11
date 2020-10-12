@@ -72,7 +72,8 @@
         android:paddingTop="4dp"
         android:text="-"
         app:layout_constraintBottom_toBottomOf="@id/textView_count"
-        app:layout_constraintRight_toLeftOf="@id/textView_count" />
+        app:layout_constraintRight_toLeftOf="@id/textView_count"
+        android:onClick="decrement"/>
 
     <TextView
         android:id="@+id/textView_count"
@@ -94,7 +95,8 @@
         android:paddingTop="4dp"
         android:text="+"
         app:layout_constraintBottom_toBottomOf="@id/textView_count"
-        app:layout_constraintLeft_toRightOf="@id/textView_count" />
+        app:layout_constraintLeft_toRightOf="@id/textView_count"
+        android:onClick="increment"/>
 
 
     <TextView
