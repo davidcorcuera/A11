@@ -7,4 +7,10 @@
     <string name="quantity">CANTIDAD</string>
     <string name="order_summary">RESUMEN PEDIDO</string>
     <string name="order">PEDIR</string>
+    <string name="with_chocolate">" con chocolate"</string>
+    <string name="with_whipped_cream">" con nata montada"</string>
+    <string name="and">" y"</string>
+    <string name="total_price_text">"El precio total es "</string>
+    <string name="you_ordered_text">", Has pedido "</string>
+    <string name="coffees_text">" cafés"</string>
 </resources>
